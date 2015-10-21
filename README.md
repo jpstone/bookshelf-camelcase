@@ -1,0 +1,1 @@
+Simple bookshelf plugin that converts gets to camelCase and sets to snake_case.

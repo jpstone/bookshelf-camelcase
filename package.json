@@ -1,0 +1,23 @@
+{
+  "name": "bookshelf-camelcase",
+  "version": "1.0.0",
+  "description": "Convert column names to camelCase for gets and back to snake_case for sets",
+  "main": "camel-case.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jpstone/bookshelf-camelcase.git"
+  },
+  "keywords": [
+    "bookshelf",
+    "camelcase"
+  ],
+  "author": "jpstone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jpstone/bookshelf-camelcase/issues"
+  },
+  "homepage": "https://github.com/jpstone/bookshelf-camelcase#readme",
+  "dependencies": {
+    "lodash": "^3.10.1"
+  }
+}
