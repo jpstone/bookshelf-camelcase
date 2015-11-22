@@ -2,7 +2,7 @@ var _ = require('lodash');
 
 module.exports = function (bookshelf, options) {
 
-	var Model = bookshelf.Model.extend({
+  var Model = bookshelf.Model.extend({
     parse: function (attr) {
       return _.reduce(attr, function (record, val, key) {
         record[_.camelCase(key)] = val;
@@ -15,8 +15,8 @@ module.exports = function (bookshelf, options) {
         return record;
       }, {});
     }
-	});
-
-	bookshelf.Model = Model;
+  });
+  
+  bookshelf.Model = Model;
 
 };
