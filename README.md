@@ -2,7 +2,7 @@
 
 Simple bookshelf plugin that converts gets to camelCase and sets to snake_case.
 
-# Instalation
+# Installation
 
 `npm install --save bookshelf-camelcase`
 
