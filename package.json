@@ -18,6 +18,15 @@
   },
   "homepage": "https://github.com/jpstone/bookshelf-camelcase#readme",
   "dependencies": {
-    "lodash": "4.13.1"
+    "bookshelf": "0.10.0",
+    "knex": "^0.11.7",
+    "lodash": "4.13.1",
+    "mocha": "2.5.3",
+    "mock-knex": "0.3.2",
+    "sqlite3": "3.1.4",
+    "unexpected": "10.15.0"
+  },
+  "scripts": {
+    "test": "mocha camelcase.spec.js"
   }
 }

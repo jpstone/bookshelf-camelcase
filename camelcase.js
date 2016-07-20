@@ -16,7 +16,6 @@ module.exports = function (bookshelf, options) {
       }, {});
     }
   });
-  
-  bookshelf.Model = Model;
 
+  bookshelf.Model = Model;
 };
