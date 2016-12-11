@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/jpstone/bookshelf-camelcase#readme",
   "dependencies": {
-    "lodash": "^4.13.1"
+    "lodash.camelcase": "^4.3.0",
+    "lodash.reduce": "^4.6.0",
+    "lodash.snakecase": "^4.1.1"
   },
   "peerDependencies": {
     "bookshelf": "^0.10.0"
