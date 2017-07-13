@@ -1,6 +1,6 @@
 {
   "name": "bookshelf-camelcase",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Convert column names to camelCase for gets and back to snake_case for sets",
   "main": "camelcase.js",
   "repository": {
