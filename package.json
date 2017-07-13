@@ -34,5 +34,8 @@
   },
   "scripts": {
     "test": "mocha camelcase.spec.js"
+  },
+  "engines": {
+    "node": ">=6.0.0"
   }
 }
