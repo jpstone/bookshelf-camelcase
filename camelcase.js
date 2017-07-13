@@ -1,21 +1,16 @@
-var _ = require('lodash');
+const camelCase = require('lodash.camelcase');
+const snakeCase = require('lodash.snakecase');
 
-module.exports = function (bookshelf, options) {
+const keyUpdater = { camelCase, snakeCase };
 
-  var Model = bookshelf.Model.extend({
-    parse: function (attr) {
-      return _.reduce(attr, function (record, val, key) {
-        record[_.camelCase(key)] = val;
-        return record;
-      }, {});
-    },
-    format: function (attr) {
-      return _.reduce(attr, function (record, val, key) {
-        record[_.snakeCase(key)] = val;
-        return record;
-      }, {});
-    }
+const changeKey = type => attr => Object.keys(attr).reduce((updated, oldKey) => {
+  updated[keyUpdater[type](oldKey)] = attr[oldKey];
+  return updated;
+}, {});
+
+module.exports = (bookshelf) => {
+  bookshelf.Model = bookshelf.Model.extend({
+    parse: changeKey('camelCase'),
+    format: changeKey('snakeCase')
   });
-
-  bookshelf.Model = Model;
 };
