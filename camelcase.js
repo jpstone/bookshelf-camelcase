@@ -1,5 +1,5 @@
 const camelCase = require('lodash.camelcase');
-const snakeCase = require('lodash.snakeCase');
+const snakeCase = require('lodash.snakecase');
 
 const keyUpdater = { camelCase, snakeCase };
 
